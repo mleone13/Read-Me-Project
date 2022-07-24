@@ -11,14 +11,59 @@ const questions = [
         name: "title",
         message: "What is the name of your project?",
     },
+
+    { 
+        type: "input",
+        name: "description",
+        message: "Add a description of your project.",
+    },
+
+    {
+        type: "input",
+        name: "installation",
+        message: "Add instructions for installation.",
+    },
+
+    {
+        type: "input",
+        name: "usage",
+        message: "Add usage information.",
+    },
+
+    {
+        type: "input",
+        name: "contribution",
+        message: "Add contribution guidelines.",
+    },
+
+    {
+        type: "input",
+        name: "tests",
+        message: "Add testing instructions.",
+    },
+
     {
         type: "list",
         name: "license",
         message: "Which license are you using?",
         choices: ["MIT", "Apache 2.0", "BSD 3.0"]
-    }
+    },
+
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your GitHub Username'
+      },
+
+      {
+        type: 'input',
+        name: 'questions',
+        message: 'Enter email address',
+      },
 
 ];
+
+
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -26,15 +71,18 @@ function writeToFile(fileName, data) {
 }
 
 
+
 function renderLicenseBadge(license) {
     if (license === "MIT" ) {
         return "[![MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)"
-    } else if (license === "Apache.2.0") {
+
+    } else if (license === "Apache 2.0") {
             return "[![Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-red)](https://opensource.org/licenses/Apache-2.0)"
-        
+
     } else {
         return "[![BSD.3.0](https://img.shields.io/badge/license-BSD%203.0-orange)](https://opensource.org/licenses/0BSD)"
     }
+
 }
 
 function generateMarkdown(data) {
@@ -42,6 +90,7 @@ function generateMarkdown(data) {
 ${renderLicenseBadge(data.license)}
   `;
   }
+
 
 // TODO: Create a function to initialize app
 function init() {
