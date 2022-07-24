@@ -29,6 +29,11 @@ function writeToFile(fileName, data) {
 function renderLicenseBadge(license) {
     if (license === "MIT" ) {
         return "[![MIT](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/licenses/MIT)"
+    } else if (license === "Apache.2.0") {
+            return "[![Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-red)](https://opensource.org/licenses/Apache-2.0)"
+        
+    } else {
+        return "[![BSD.3.0](https://img.shields.io/badge/license-BSD%203.0-orange)](https://opensource.org/licenses/0BSD)"
     }
 }
 
