@@ -86,9 +86,26 @@ function renderLicenseBadge(license) {
 }
 
 function generateMarkdown(data) {
-    return `# ${data.title}
+let output = `# ${data.title}
 ${renderLicenseBadge(data.license)}
-  `;
+  `
+output += `# ${data.description}` 
+
+output += `# ${data.installation}`
+
+output += ` # ${data.usage}`
+
+output += ` # ${data.contribution}`
+
+output += `# ${data.test}`
+
+output += `# ${data.license}`
+
+output += `# ${data.github}`
+
+output += `# ${data.questions}`
+
+return output
   }
 
 
@@ -98,7 +115,6 @@ function init() {
         writeToFile ("README.md", generateMarkdown(answers))
     })
 }
-
 
 // Function call to initialize app
 init();
