@@ -97,7 +97,7 @@ output += ` # ${data.usage}`
 
 output += ` # ${data.contribution}`
 
-output += `# ${data.test}`
+output += `# ${data.tests}`
 
 output += `# ${data.license}`
 

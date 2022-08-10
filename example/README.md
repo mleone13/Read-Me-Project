@@ -1,3 +1,3 @@
-# mary
-[![BSD.3.0](https://img.shields.io/badge/license-BSD%203.0-orange)](https://opensource.org/licenses/0BSD)
-  # try# cool # nice # let# undefined# BSD 3.0# maryk# mark1le
+# Challenge
+[![Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-red)](https://opensource.org/licenses/Apache-2.0)
+  # Very cool project# install # usage # guidelines# undefined# Apache 2.0# marykleo# marykleone@gmail.com
